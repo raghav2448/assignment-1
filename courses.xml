@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="courses.xsl"?>
+<courses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="courses.xsd">
+    
+    <course id="web">
+        <title>Web Development Mastery</title>
+        <description>
+            Complete Web Development course covering HTML5, CSS3, JavaScript, 
+            React, Node.js, and modern web technologies. Build responsive 
+            websites and full-stack applications.
+        </description>
+        <duration>12 weeks</duration>
+        <level>Beginner to Advanced</level>
+        <price>₹9,999</price>
+        <instructor>
+            <name>John Doe</name>
+            <experience>8+ years</experience>
+            <rating>4.9</rating>
+        </instructor>
+        <modules>
+            <module>HTML5 & CSS3 Fundamentals</module>
+            <module>JavaScript ES6+</module>
+            <module>React.js Framework</module>
+            <module>Node.js & Express</module>
+            <module>Database Integration</module>
+            <module>Deployment & DevOps</module>
+        </modules>
+        <prerequisites>
+            <item>Basic computer knowledge</item>
+        </prerequisites>
+        <certificate>Yes</certificate>
+        <image>images/web.jpg</image>
+    </course>
+
+    <course id="python">
+        <title>Python Programming Complete</title>
+        <description>
+            Master Python from basics to advanced topics including data science, 
+            web development with Django/Flask, automation, and machine learning.
+        </description>
+        <duration>10 weeks</duration>
+        <level>Beginner to Intermediate</level>
+        <price>₹8,499</price>
+        <instructor>
+            <name>Sarah Johnson</name>
+            <experience>6+ years</experience>
+            <rating>4.8</rating>
+        </instructor>
+        <modules>
+            <module>Python Basics & Data Types</module>
+            <module>OOP in Python</module>
+            <module>Data Analysis with Pandas</module>
+            <module>Web Development - Django</module>
+            <module>Machine Learning Basics</module>
+        </modules>
+        <prerequisites>
+            <item>No prior programming experience required</item>
+        </prerequisites>
+        <certificate>Yes</certificate>
+        <image>images/python.jpg</image>
+    </course>
+
+    <course id="devops">
+        <title>DevOps Engineering Professional</title>
+        <description>
+            Complete DevOps training covering Docker, Kubernetes, Jenkins, 
+            AWS, CI/CD pipelines, monitoring, and infrastructure as code.
+        </description>
+        <duration>14 weeks</duration>
+        <level>Intermediate</level>
+        <price>₹12,999</price>
+        <instructor>
+            <name>Mike Chen</name>
+            <experience>10+ years</experience>
+            <rating>4.9</rating>
+        </instructor>
+        <modules>
+            <module>Linux & Shell Scripting</module>
+            <module>Docker & Containerization</module>
+            <module>Kubernetes Orchestration</module>
+            <module>Jenkins CI/CD</module>
+            <module>AWS Cloud Services</module>
+            <module>Monitoring & Logging</module>
+        </modules>
+        <prerequisites>
+            <item>Basic Linux knowledge</item>
+            <item>Understanding of networking</item>
+        </prerequisites>
+        <certificate>Yes</certificate>
+        <image>images/devops.jpg</image>
+    </course>
+
+    <course id="flutter">
+        <title>Flutter Mobile App Development</title>
+        <description>
+            Build cross-platform mobile apps for iOS and Android using Flutter 
+            and Dart. Learn state management, Firebase integration, and app deployment.
+        </description>
+        <duration>8 weeks</duration>
+        <level>Beginner to Intermediate</level>
+        <price>₹7,999</price>
+        <instructor>
+            <name>Emily Davis</name>
+            <experience>5+ years</experience>
+            <rating>4.7</rating>
+        </instructor>
+        <modules>
+            <module>Dart Programming</module>
+            <module>Flutter Widgets & Layouts</module>
+            <module>State Management</module>
+            <module>Firebase Integration</module>
+            <module>App Testing & Deployment</module>
+        </modules>
+        <prerequisites>
+            <item>Basic programming knowledge</item>
+        </prerequisites>
+        <certificate>Yes</certificate>
+        <image>images/flutter.jpg</image>
+    </course>
+
+    <course id="blockchain">
+        <title>Blockchain & Smart Contracts</title>
+        <description>
+            Comprehensive Blockchain course covering Ethereum, Solidity, 
+            Web3, DeFi, NFTs, and decentralized application development.
+        </description>
+        <duration>11 weeks</duration>
+        <level>Intermediate to Advanced</level>
+        <price>₹14,999</price>
+        <instructor>
+            <name>Alexander Wang</name>
+            <experience>7+ years</experience>
+            <rating>4.9</rating>
+        </instructor>
+        <modules>
+            <module>Blockchain Fundamentals</module>
+            <module>Ethereum & Solidity</module>
+            <module>Smart Contracts Development</module>
+            <module>Web3.js Integration</module>
+            <module>DeFi & NFTs</module>
+            <module>DApp Deployment</module>
+        </modules>
+        <prerequisites>
+            <item>JavaScript knowledge</item>
+            <item>Basic web development</item>
+        </prerequisites>
+        <certificate>Yes</certificate>
+        <image>images/blockchain.jpg</image>
+    </course>
+
+    <platform>
+        <name>My Learning Platform</name>
+        <contact>
+            <email>info@learning.com</email>
+            <phone>9876543210</phone>
+            <address>Hyderabad, India</address>
+        </contact>
+        <features>
+            <feature>24/7 Access</feature>
+            <feature>Certificate on Completion</feature>
+            <feature>Live Doubt Sessions</feature>
+            <feature>Job Assistance</feature>
+        </features>
+    </platform>
+
+</courses>
