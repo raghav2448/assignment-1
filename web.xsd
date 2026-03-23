@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <!-- Root element: courses -->
+    <xs:element name="courses">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="course" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="title" type="xs:string"/>
+                            <xs:element name="description" type="xs:string"/>
+                            <xs:element name="duration" type="xs:string"/>
+                            <xs:element name="level" type="xs:string"/>
+                            <xs:element name="price" type="xs:string"/>
+                            <xs:element name="instructor" type="instructorType"/>
+                            <xs:element name="modules">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="module" type="xs:string" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="prerequisites" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="item" type="xs:string" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="certificate" type="certificateType"/>
+                            <xs:element name="image" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:token" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="platform" type="platformType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Instructor complex type -->
+    <xs:complexType name="instructorType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="experience" type="xs:string"/>
+            <xs:element name="rating" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Platform complex type -->
+    <xs:complexType name="platformType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="contact" type="contactType"/>
+            <xs:element name="features">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="feature" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Contact complex type -->
+    <xs:complexType name="contactType">
+        <xs:sequence>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="phone" type="xs:string"/>
+            <xs:element name="address" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Certificate enumeration -->
+    <xs:simpleType name="certificateType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Yes"/>
+            <xs:enumeration value="No"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Additional constraints -->
+    <xs:simpleType name="courseIdType">
+        <xs:restriction base="xs:token">
+            <xs:pattern value="[a-z]+"/>
+            <xs:minLength value="3"/>
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
